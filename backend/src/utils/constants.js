@@ -1,0 +1,50 @@
+// User status constants
+const USER_STATUS = {
+  ACTIVE: 'active',
+  INACTIVE: 'inactive',
+  SUSPENDED: 'suspended'
+};
+
+// Risk tolerance levels
+const RISK_TOLERANCE = {
+  LOW: 'low',
+  MEDIUM: 'medium',
+  HIGH: 'high'
+};
+
+// Default values
+const DEFAULTS = {
+  CURRENCY: 'INR',
+  LANGUAGE: 'en',
+  PAGE_SIZE: 20,
+  MAX_PAGE_SIZE: 100
+};
+
+// Error codes
+const ERROR_CODES = {
+  VALIDATION_ERROR: 'VALIDATION_ERROR',
+  USER_NOT_FOUND: 'USER_NOT_FOUND',
+  USER_ALREADY_EXISTS: 'USER_ALREADY_EXISTS',
+  EMAIL_ALREADY_EXISTS: 'EMAIL_ALREADY_EXISTS',
+  INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
+  RATE_LIMIT_EXCEEDED: 'RATE_LIMIT_EXCEEDED'
+};
+
+// HTTP status codes
+const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  BAD_REQUEST: 400,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  TOO_MANY_REQUESTS: 429,
+  INTERNAL_SERVER_ERROR: 500
+};
+
+module.exports = {
+  USER_STATUS,
+  RISK_TOLERANCE,
+  DEFAULTS,
+  ERROR_CODES,
+  HTTP_STATUS
+};
